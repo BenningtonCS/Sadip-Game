@@ -1,16 +1,22 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class movingScript : MonoBehaviour {
 
 	Rigidbody physicsBody;
  	float speed = 10f;
+	public Text countText;
+	//public Text winText;
+	private int count;
 
 	// Use this for initialization
 	void Start () {
 		physicsBody = GetComponent<Rigidbody> ();
+		count = 0;
+		SetCountText ();
+		//winText = "";
 	}
-	
 	// Update is called once per frame
 	void Update () {
 		float horizontalInput = Input.GetAxisRaw ("Horizontal");
@@ -19,4 +25,20 @@ public class movingScript : MonoBehaviour {
 		physicsBody.AddForce (movementVector.normalized * speed);
 	}
 
+	void OnTriggerEnter(Collider other)
+	{
+		if (other.gameObject.CompareTag("Pick Up"))
+		{
+			other.gameObject.SetActive (false);
+			count += 1;
+				SetCountText();
+		}
+	}
+
+	void SetCountText(){
+		countText.text = "Count: " + count.ToString ();
+		/*if(count >= 8){
+			winText = "You Win!";
+		}*/
+	}
 }

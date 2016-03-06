@@ -18,11 +18,5 @@ public class movingScript : MonoBehaviour {
 		Vector3 movementVector = new Vector3 (horizontalInput, 0, verticalInput); //Vector3(1, 0, 1)
 		physicsBody.AddForce (movementVector.normalized * speed);
 	}
-	//void NewFunction(){}
 
-	//void ThisIsAFunctionWithCapitalization(){}
-
-	// bool isTrue
-
-	// bool hasApple
 }

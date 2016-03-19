@@ -10,10 +10,14 @@ public class movingScript : MonoBehaviour {
 	public int count;
 	public GameObject prefab;
 	GameObject fire;
+	//public AudioClip audioClip;
+
+	AudioSource playerAudio;
 
 	// Use this for initialization
 	void Start () {
 		physicsBody = GetComponent<Rigidbody> ();
+		playerAudio = GetComponent<AudioSource> ();
 		count = 0;
 		SetCountText ();
 	}
@@ -52,7 +56,7 @@ public class movingScript : MonoBehaviour {
 			transform.localScale += new Vector3 (.09f,.09f,.09f); 
 			// speed of the ball will be decreased everytime it gains some points
 			speed -= 0.02f;
-			//AudioSource.PlayClipAtPoint(pickup, transform.position);
+			playerAudio.Play();
 		}
 
 

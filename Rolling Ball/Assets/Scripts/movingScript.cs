@@ -69,7 +69,8 @@ public class movingScript : MonoBehaviour {
 	void SetCountText(){
 		countText.text = "Count: " + count.ToString ();
 		if (count == 40) {
-			Debug.Log ("You Won! Can you through another ball out of the arena?");
+			//Debug.Log ("You Won! Can you through another ball out of the arena?");
+			countText.text = "Hurray!! You won.";
 		} else {
 			Debug.Log ("There are " + (40 - count) + " pick ups remaining!");
 		}

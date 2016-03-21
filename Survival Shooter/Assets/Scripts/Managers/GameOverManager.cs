@@ -2,14 +2,17 @@
 
 public class GameOverManager : MonoBehaviour
 {
-    public PlayerHealth playerHealth;
+	public GameObject player;
 	public float restartDelay = 5f;
 
     Animator anim;
 	float restartTimer;
 
+	private PlayerHealth playerHealth;
+
     void Awake()
     {
+		playerHealth = player.GetComponent<PlayerHealth> ();
         anim = GetComponent<Animator>();
     }
 
@@ -18,6 +21,7 @@ public class GameOverManager : MonoBehaviour
     {
         if (playerHealth.currentHealth <= 0)
         {
+			Debug.Log ("game over");
             anim.SetTrigger("GameOver");
 
 			restartTimer += Time.deltaTime;

@@ -2,15 +2,18 @@
 
 public class EnemyManager : MonoBehaviour
 {
-    public PlayerHealth playerHealth;
+	public GameObject player;
     public GameObject enemy;
     public float spawnTime = 3f;
     public Transform[] spawnPoints;
 
+	PlayerHealth playerHealth;
+
 
     void Start ()
     {
-        InvokeRepeating ("Spawn", spawnTime, spawnTime);
+		playerHealth = player.GetComponent<PlayerHealth> ();
+		InvokeRepeating ("Spawn", spawnTime, spawnTime);
     }
 
 

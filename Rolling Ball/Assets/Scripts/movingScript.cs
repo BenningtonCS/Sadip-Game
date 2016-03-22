@@ -37,8 +37,9 @@ public class movingScript : MonoBehaviour {
 
 		Vector3 ballPosition = physicsBody.position;
 		if(ballPosition.y < 0){ //since ground is a plane so we can check Y-coordinate of plane for knowing whether the ball is in the ground or not.
-			Debug.Log("Game Over!!");
-			Debug.Log ("Game Over GoodBye!!");
+			//Debug.Log("Game Over!!");
+			//Debug.Log ("Game Over GoodBye!!");
+			countText.text = "Game Over GoodBye!";
 		}
 
 

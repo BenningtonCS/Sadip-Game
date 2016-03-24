@@ -48,6 +48,7 @@
      <Compile Include="Assets\Scripts\Rotater.cs" />
      <Compile Include="Assets\Scripts\cameraController.cs" />
      <Compile Include="Assets\Scripts\movingScript.cs" />
+     <Compile Include="Assets\Scripts\movingScriptForAnotherBall.cs" />
      <Compile Include="Assets\Scripts\randomBalls.cs" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>

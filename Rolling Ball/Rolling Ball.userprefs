@@ -1,12 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/movingScriptForAnotherBall.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/randomBalls.cs">
     <Files>
-      <File FileName="Assets/Scripts/movingScriptForAnotherBall.cs" Line="15" Column="66" />
-      <File FileName="Assets/Scripts/movingScript.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/cameraController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/movingScript.cs" Line="22" Column="19" />
+      <File FileName="Assets/Scripts/movingScriptForAnotherBall.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Rotater.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/randomBalls.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/randomBalls.cs" Line="15" Column="48" />
+      <File FileName="Assets/Scripts/ColorChanging.cs" Line="13" Column="61" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

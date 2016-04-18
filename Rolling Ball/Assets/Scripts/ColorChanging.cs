@@ -9,7 +9,7 @@ public class ColorChanging : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown(KeyCode.R)){
+		if(Input.GetKeyDown(KeyCode.Space)){
 			newColor = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f), 1.0f);
 			GetComponent<Renderer>().material.color = newColor;
 		}

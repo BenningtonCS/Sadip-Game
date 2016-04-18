@@ -5,8 +5,8 @@ using System.Collections;
 public class movingScript : MonoBehaviour {
 
 	Rigidbody physicsBody;
- 	float speed = 10f;
-	public Text countText;
+ 	float speed = 10f; // setting speed variable to be 10 at first
+	public Text countText; 
 	public int count;
 	public GameObject prefab;
 	GameObject fire;
@@ -16,9 +16,9 @@ public class movingScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		physicsBody = GetComponent<Rigidbody> ();
-		playerAudio = GetComponent<AudioSource> ();
-		count = 0;
+		physicsBody = GetComponent<Rigidbody> (); // instantiating physics body 
+		playerAudio = GetComponent<AudioSource> (); // instantiating audio source
+		count = 0; // setting count value to be 0 at first 
 		SetCountText ();
 	}
 

@@ -1,0 +1,5 @@
+/Users/sadipgiri/Projects/SuperSimpleCalculator/SuperSimpleCalculator/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/sadipgiri/Projects/SuperSimpleCalculator/SuperSimpleCalculator/bin/Debug/SuperSimpleCalculator.exe.mdb
+/Users/sadipgiri/Projects/SuperSimpleCalculator/SuperSimpleCalculator/bin/Debug/SuperSimpleCalculator.exe
+/Users/sadipgiri/Projects/SuperSimpleCalculator/SuperSimpleCalculator/obj/x86/Debug/SuperSimpleCalculator.exe
+/Users/sadipgiri/Projects/SuperSimpleCalculator/SuperSimpleCalculator/obj/x86/Debug/SuperSimpleCalculator.exe.mdb
